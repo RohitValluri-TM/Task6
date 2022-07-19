@@ -1,6 +1,7 @@
 import './App.css';
 import Counter1 from './Counter1';
 import React, {useReducer} from 'react'
+import DataFetch from './DataFetch';
 
 export const CountContext = React.createContext()
 const initialState = 0
@@ -25,7 +26,11 @@ function App() {
     Count : {count}
       <Counter1/>
     </div>
+    <div>
+      <DataFetch/>
+    </div>
     </CountContext.Provider>
+    
   );
 }
 
